@@ -1,0 +1,36 @@
+# ===== Segurança: headers de resposta (Apache) =====
+# O Content-Security-Policy já está definido via <meta> no index.html.
+# Se o seu hosting permitir headers customizados, mantenha ambos ativos.
+
+<IfModule mod_headers.c>
+  # Impede o navegador de interpretar arquivos com MIME errado
+  Header set X-Content-Type-Options "nosniff"
+
+  # Bloqueia embutir o site em iframes de terceiros (anti clickjacking)
+  Header always set X-Frame-Options "SAMEORIGIN"
+
+  # Envia menos dados do referenciador para outros domínios
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Limita APIs do navegador (geolocalização, câmera, microfone)
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+  # Força HTTPS (env=HTTPS só aplica quando já estiver em HTTPS)
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+</IfModule>
+
+# ===== Força HTTPS se o hosting tiver o módulo de reescrita =====
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+</IfModule>
+
+# ===== Desabilita listagem de diretórios =====
+Options -Indexes
+
+# ===== MIME correto para os arquivos estáticos =====
+<IfModule mod_mime.c>
+  AddType application/javascript .js
+  AddType text/css .css
+</IfModule>

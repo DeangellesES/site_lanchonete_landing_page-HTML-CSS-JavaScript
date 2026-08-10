@@ -87,16 +87,23 @@ function getScheduleInfo(now) {
   return { open, close, minutes, isOpen: minutes >= open && minutes < close };
 }
 
+function setStatus(el, message, closed) {
+  el.classList.toggle('closed', closed);
+  el.textContent = '';
+  const icon = document.createElement('i');
+  icon.className = 'fa-solid fa-circle';
+  el.appendChild(icon);
+  el.appendChild(document.createTextNode(' ' + message));
+}
+
 function updateOpenStatus() {
   const el = document.getElementById('openNow');
   const { open, close, minutes, isOpen } = getScheduleInfo(new Date());
 
   if (isOpen) {
-    el.classList.remove('closed');
-    el.innerHTML = '<i class="fa-solid fa-circle"></i> Aberto agora! Fecha às ' + formatTime(close) + 'h';
+    setStatus(el, 'Aberto agora! Fecha às ' + formatTime(close) + 'h', false);
   } else {
-    el.classList.add('closed');
-    el.innerHTML = '<i class="fa-solid fa-circle"></i> Fechado no momento. Abrimos às ' + formatTime(open) + 'h';
+    setStatus(el, 'Fechado no momento. Abrimos às ' + formatTime(open) + 'h', true);
   }
 
   function formatTime(totalMinutes) {
@@ -118,6 +125,6 @@ document.querySelectorAll('.btn-order').forEach((btn) => {
     const message = encodeURIComponent(
       'Olá! Quero pedir um ' + item + ' (' + price + '). Pode confirmar a disponibilidade?'
     );
-    window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + message, '_blank');
+    window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + message, '_blank', 'noopener,noreferrer');
   });
 });
