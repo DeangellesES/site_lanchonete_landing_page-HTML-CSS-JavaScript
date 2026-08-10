@@ -19,6 +19,26 @@ navLinks.querySelectorAll('a').forEach((link) => {
   });
 });
 
+// ===== ABAS DO CARDÁPIO =====
+function switchTab(tabName) {
+  document.querySelectorAll('.menu-tab-btn').forEach((btn) => {
+    btn.classList.toggle('active', btn.dataset.tab === tabName);
+  });
+
+  document.querySelectorAll('.menu-tab').forEach((tab) => {
+    tab.classList.toggle('active', tab.id === 'tab-' + tabName);
+  });
+}
+
+document.querySelectorAll('.menu-tab-btn').forEach((btn) => {
+  btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+});
+
+// Links de navegação que apontam para uma aba específica
+document.querySelectorAll('[data-tab-link]').forEach((link) => {
+  link.addEventListener('click', () => switchTab(link.dataset.tabLink));
+});
+
 // ===== FAQ =====
 document.querySelectorAll('.faq-item').forEach((item) => {
   const question = item.querySelector('.faq-question');

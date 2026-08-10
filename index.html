@@ -23,8 +23,9 @@
     <nav class="nav-links" id="navLinks">
       <a href="#inicio">Início</a>
       <a href="#sobre">Sobre</a>
-      <a href="#lanches">Lanches</a>
-      <a href="#bebidas">Bebidas</a>
+      <!-- <a href="#cardapio">Lanches</a>
+      <a href="#cardapio" data-tab-link="bebidas">Bebidas</a> -->
+      <a href="#cardapio">Cardápio</a>
       <a href="#galeria">Galeria</a>
       <a href="#localizacao">Localização</a>
       <a href="#faq">FAQ</a>
@@ -44,7 +45,7 @@
     <h1>O melhor <span>X-Tudo</span> da cidade!</h1>
     <p>Pão fresquinho, hambúrguer artesanal 160g, queijo derretido e aquele toque especial da chapa. Peça e receba quentinho na sua casa.</p>
     <div class="hero-actions">
-      <a href="#lanches" class="btn btn-primary"><i class="fa-solid fa-utensils"></i> Ver Cardápio</a>
+      <a href="#cardapio" class="btn btn-primary"><i class="fa-solid fa-utensils"></i> Ver Cardápio</a>
       <a href="#contato" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i> Pedir pelo WhatsApp</a>
     </div>
     <div class="hero-stats">
@@ -89,14 +90,19 @@
   </div>
 </section>
 
-<!-- ===== CARDÁPIO - LANCHES ===== -->
-<section class="section section-orange" id="lanches">
+<!-- ===== CARDÁPIO ===== -->
+<section class="section section-orange" id="cardapio">
   <div class="container">
     <div class="section-head">
       <span class="section-tag">Cardápio</span>
-      <h2>Nossos <em>Lanches</em></h2>
-      <p>Escolha seu favorito. Todos podem ganhar batata frita como acompanhamento.</p>
+      <h2>Nosso <em>Cardápio</em></h2>
+      <p>Escolha a categoria e bom apetite. Todos os lanches podem ganhar batata frita como acompanhamento.</p>
     </div>
+    <div class="menu-tabs">
+      <button class="menu-tab-btn active" data-tab="lanches"><i class="fa-solid fa-burger"></i> Lanches</button>
+      <button class="menu-tab-btn" data-tab="bebidas"><i class="fa-solid fa-glass-water"></i> Bebidas</button>
+    </div>
+    <div class="menu-tab active" id="tab-lanches">
     <div class="menu-grid">
 
       <article class="menu-card">
@@ -194,17 +200,8 @@
       </article>
 
     </div>
-  </div>
-</section>
-
-<!-- ===== CARDÁPIO - BEBIDAS ===== -->
-<section class="section" id="bebidas">
-  <div class="container">
-    <div class="section-head">
-      <span class="section-tag">Pra gelar</span>
-      <h2>Bebidas <em>Geladas</em></h2>
-      <p>Refrigerantes, sucos naturais e milkshakes cremosos para acompanhar seu lanche.</p>
     </div>
+    <div class="menu-tab" id="tab-bebidas">
     <div class="menu-grid drinks-grid">
 
       <article class="menu-card drink-card">
@@ -275,6 +272,7 @@
         </div>
       </article>
 
+    </div>
     </div>
   </div>
 </section>
@@ -427,7 +425,7 @@
         <p>(11) 3333-4444</p>
         <span class="contact-note">Para reservas e retirada</span>
       </a>
-      <a href="https://www.instagram.com" target="_blank" rel="noopener" class="contact-card instagram">
+      <!-- <a href="https://www.instagram.com" target="_blank" rel="noopener" class="contact-card instagram">
         <i class="fa-brands fa-instagram"></i>
         <h3>Instagram</h3>
         <p>@chapaquente</p>
@@ -438,7 +436,7 @@
         <h3>Facebook</h3>
         <p>/chapaquente</p>
         <span class="contact-note">Novidades e eventos</span>
-      </a>
+      </a> -->
     </div>
   </div>
 </section>
@@ -460,15 +458,15 @@
           <a href="https://www.tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
         </div>
       </div>
-      <div class="footer-col">
+      <!-- <div class="footer-col">
         <h4>Cardápio</h4>
         <ul>
-          <li><a href="#lanches">Lanches</a></li>
-          <li><a href="#bebidas">Bebidas</a></li>
+          <li><a href="#cardapio">Lanches</a></li>
+          <li><a href="#cardapio" data-tab-link="bebidas">Bebidas</a></li>
           <li><a href="#galeria">Galeria</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
-      </div>
+      </div> -->
       <div class="footer-col">
         <h4>Contato</h4>
         <ul>
