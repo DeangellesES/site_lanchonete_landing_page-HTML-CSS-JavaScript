@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapa Quente Burgers — Lanchonete Artesanal</title>
+<meta name="description" content="A melhor lanchonete artesanal da cidade. Lanches X-Tudo com ingredientes frescos, bebidas geladas e delivery rápido.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" id="navbar">
+  <div class="container nav-container">
+    <a href="#inicio" class="logo">
+      <span class="logo-icon"><i class="fa-solid fa-burger"></i></span>
+      Chapa<span>Quente</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#lanches">Lanches</a>
+      <a href="#bebidas">Bebidas</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contato" class="btn-nav">Fazer Pedido</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="inicio">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <span class="hero-badge"><i class="fa-solid fa-fire"></i> Artesanal &amp; Feito na hora</span>
+    <h1>O melhor <span>X-Tudo</span> da cidade!</h1>
+    <p>Pão fresquinho, hambúrguer artesanal 160g, queijo derretido e aquele toque especial da chapa. Peça e receba quentinho na sua casa.</p>
+    <div class="hero-actions">
+      <a href="#lanches" class="btn btn-primary"><i class="fa-solid fa-utensils"></i> Ver Cardápio</a>
+      <a href="#contato" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i> Pedir pelo WhatsApp</a>
+    </div>
+    <div class="hero-stats">
+      <div><strong>+10 anos</strong><span>de tradição</span></div>
+      <div><strong>+50k</strong><span>lanches vendidos</span></div>
+      <div><strong>4.9★</strong><span>avaliação média</span></div>
+      <div><strong>30min</strong><span>entrega média</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SOBRE / DIFERENCIAIS ===== -->
+<section class="section section-black" id="sobre">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Por que a Chapa Quente?</span>
+      <h2>Feito com amor, <em>servido com capricho</em></h2>
+      <p>Cada lanche é montado no pedido, com ingredientes selecionados e pão de padaria de verdade.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-fire-burner"></i></div>
+        <h3>Chapa quente de verdade</h3>
+        <p>Hambúrguer selado na chapa, pão tostado na manteiga e sabor defumado inconfundível.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-carrot"></i></div>
+        <h3>Ingredientes frescos</h3>
+        <p>Alface crocante, tomate maduro e queijo selecionado. Compramos fresquinho todos os dias.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+        <h3>Entrega rápida</h3>
+        <p>Pediu, saiu. Entrega média de 30 minutos com embalagem que mantém tudo quentinho.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+        <h3>Feito com amor</h3>
+        <p>Receita de família desde 2014. Aqui você não come um lanche, você vive uma experiência.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CARDÁPIO - LANCHES ===== -->
+<section class="section section-orange" id="lanches">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Cardápio</span>
+      <h2>Nossos <em>Lanches</em></h2>
+      <p>Escolha seu favorito. Todos podem ganhar batata frita como acompanhamento.</p>
+    </div>
+    <div class="menu-grid">
+
+      <article class="menu-card">
+        <div class="menu-img">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=800&auto=format&fit=crop" alt="X-Tudo" loading="lazy">
+          <span class="menu-badge">Mais pedido</span>
+        </div>
+        <div class="menu-body">
+          <div class="menu-top"><h3>X-Tudo</h3><span class="menu-price">R$ 24,90</span></div>
+          <p>Pão brioche, hambúrguer artesanal 160g, queijo, bacon crocante, ovo, presunto, alface, tomate e molho da casa.</p>
+          <button class="btn-order" data-item="X-Tudo" data-price="R$ 24,90"><i class="fa-brands fa-whatsapp"></i> Pedir agora</button>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-img">
+          <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?q=80&w=800&auto=format&fit=crop" alt="X-Bacon" loading="lazy">
+          <span class="menu-badge">Sucesso</span>
+        </div>
+        <div class="menu-body">
+          <div class="menu-top"><h3>X-Bacon</h3><span class="menu-price">R$ 26,90</span></div>
+          <p>Pão brioche, hambúrguer 160g, fatias generosas de bacon crocante, cheddar derretido, alface e tomate.</p>
+          <button class="btn-order" data-item="X-Bacon" data-price="R$ 26,90"><i class="fa-brands fa-whatsapp"></i> Pedir agora</button>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-img">
+          <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?q=80&w=800&auto=format&fit=crop" alt="X-Salada" loading="lazy">
+          <span class="menu-badge">Levinho</span>
+        </div>
+        <div class="menu-body">
+          <div class="menu-top"><h3>X-Salada</h3><span class="menu-price">R$ 20,90</span></div>
+          <p>Pão brioche, hambúrguer 160g, queijo prato, alface americana, tomate e cebola roxa fresquinha.</p>
+          <button class="btn-order" data-item="X-Salada" data-price="R$ 20,90"><i class="fa-brands fa-whatsapp"></i> Pedir agora</button>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-img">
+          <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=800&auto=format&fit=crop" alt="X-Tudo Duplo" loading="lazy">
+          <span class="menu-badge">Para brutos</span>
+        </div>
+        <div class="menu-body">
+          <div class="menu-top"><h3>X-Tudo Duplo</h3><span class="menu-price">R$ 32,90</span></div>
+          <p>O nosso clássico com DOIS hambúrgueres artesanais de 160g, dobro de queijo, bacon e ovo. Só para os fortes.</p>
+          <button class="btn-order" data-item="X-Tudo Duplo" data-price="R$ 32,90"><i class="fa-brands fa-whatsapp"></i> Pedir agora</button>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-img">
+          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=800&auto=format&fit=crop" alt="X-Frango" loading="lazy">
+          <span class="menu-badge">Crocrunch</span>
+        </div>
+        <div class="menu-body">
+          <div class="menu-top"><h3>X-Frango</h3><span class="menu-price">R$ 22,90</span></div>
+          <p>Filé de frango empanado crocante, queijo derretido, alface americana e molho especial de mostarda e mel.</p>
+          <button class="btn-order" data-item="X-Frango" data-price="R$ 22,90"><i class="fa-brands fa-whatsapp"></i> Pedir agora</button>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-img">
+          <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=800&auto=format&fit=crop" alt="Combo Chapa Quente" loading="lazy">
+          <span class="menu-badge">Combo</span>
+        </div>
+        <div class="menu-body">
+          <div class="menu-top"><h3>Combo Chapa Quente</h3><span class="menu-price">R$ 36,90</span></div>
+          <p>X-Tudo + batata frita + refrigerante lata. O combo completo para matar a fome de verdade.</p>
+          <button class="btn-order" data-item="Combo Chapa Quente" data-price="R$ 36,90"><i class="fa-brands fa-whatsapp"></i> Pedir agora</button>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-img">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="X-Barbecue" loading="lazy">
+        </div>
+        <div class="menu-body">
+          <div class="menu-top"><h3>X-Barbecue</h3><span class="menu-price">R$ 27,90</span></div>
+          <p>Hambúrguer 160g, cheddar, anéis de cebola crocantes e generosa camada de molho barbecue defumado.</p>
+          <button class="btn-order" data-item="X-Barbecue" data-price="R$ 27,90"><i class="fa-brands fa-whatsapp"></i> Pedir agora</button>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-img">
+          <img src="https://images.unsplash.com/photo-1610395219229-89ed2f3c1fbf?q=80&w=800&auto=format&fit=crop" alt="Batata Frita" loading="lazy">
+        </div>
+        <div class="menu-body">
+          <div class="menu-top"><h3>Batata Frita</h3><span class="menu-price">R$ 14,90</span></div>
+          <p>Porção de batata frita crocante por fora, macia por dentro. Acompanha molho da casa ou cheddar.</p>
+          <button class="btn-order" data-item="Batata Frita" data-price="R$ 14,90"><i class="fa-brands fa-whatsapp"></i> Pedir agora</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CARDÁPIO - BEBIDAS ===== -->
+<section class="section" id="bebidas">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Pra gelar</span>
+      <h2>Bebidas <em>Geladas</em></h2>
+      <p>Refrigerantes, sucos naturais e milkshakes cremosos para acompanhar seu lanche.</p>
+    </div>
+    <div class="menu-grid drinks-grid">
+
+      <article class="menu-card drink-card">
+        <div class="menu-img">
+          <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?q=80&w=800&auto=format&fit=crop" alt="Refrigerante" loading="lazy">
+          <span class="menu-badge">Geladinho</span>
+        </div>
+        <div class="menu-body">
+          <div class="menu-top"><h3>Refrigerante Lata</h3><span class="menu-price">R$ 7,00</span></div>
+          <p>Coca-Cola, Guaraná, Fanta ou Sprite. Bem gelado, do jeito que tem que ser.</p>
+          <button class="btn-order" data-item="Refrigerante Lata" data-price="R$ 7,00"><i class="fa-brands fa-whatsapp"></i> Pedir</button>
+        </div>
+      </article>
+
+      <article class="menu-card drink-card">
+        <div class="menu-img">
+          <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?q=80&w=800&auto=format&fit=crop" alt="Suco Natural" loading="lazy">
+        </div>
+        <div class="menu-body">
+          <div class="menu-top"><h3>Suco Natural</h3><span class="menu-price">R$ 9,00</span></div>
+          <p>Laranja, abacaxi com hortelã ou limão. Feito na hora, sem água, só fruta.</p>
+          <button class="btn-order" data-item="Suco Natural" data-price="R$ 9,00"><i class="fa-brands fa-whatsapp"></i> Pedir</button>
+        </div>
+      </article>
+
+      <article class="menu-card drink-card">
+        <div class="menu-img">
+          <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?q=80&w=800&auto=format&fit=crop" alt="Guaraná" loading="lazy">
+        </div>
+        <div class="menu-body">
+          <div class="menu-top"><h3>Guaraná 1L</h3><span class="menu-price">R$ 12,00</span></div>
+          <p>Para quem divide (ou não). Guaraná geladíssimo de 1 litro pra acompanhar o combo.</p>
+          <button class="btn-order" data-item="Guaraná 1L" data-price="R$ 12,00"><i class="fa-brands fa-whatsapp"></i> Pedir</button>
+        </div>
+      </article>
+
+      <article class="menu-card drink-card">
+        <div class="menu-img">
+          <img src="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?q=80&w=800&auto=format&fit=crop" alt="Milkshake" loading="lazy">
+          <span class="menu-badge">Cremoso</span>
+        </div>
+        <div class="menu-body">
+          <div class="menu-top"><h3>Milkshake</h3><span class="menu-price">R$ 16,90</span></div>
+          <p>Chocolate, morango ou ovomaltine com calda e chantilly. Sobremesa e bebida num só.</p>
+          <button class="btn-order" data-item="Milkshake" data-price="R$ 16,90"><i class="fa-brands fa-whatsapp"></i> Pedir</button>
+        </div>
+      </article>
+
+      <article class="menu-card drink-card">
+        <div class="menu-img">
+          <img src="https://images.unsplash.com/photo-1603561596111-d3e20b3ad4c2?q=80&w=800&auto=format&fit=crop" alt="Milkshake Ovomaltine" loading="lazy">
+        </div>
+        <div class="menu-body">
+          <div class="menu-top"><h3>Milkshake Ovomaltine</h3><span class="menu-price">R$ 18,90</span></div>
+          <p>Milkshake de ovomaltine super cremoso, com calda de chocolate e pedaços crocantes.</p>
+          <button class="btn-order" data-item="Milkshake Ovomaltine" data-price="R$ 18,90"><i class="fa-brands fa-whatsapp"></i> Pedir</button>
+        </div>
+      </article>
+
+      <article class="menu-card drink-card">
+        <div class="menu-img">
+          <img src="https://images.unsplash.com/photo-1525385133512-2f3bdd039054?q=80&w=800&auto=format&fit=crop" alt="Água" loading="lazy">
+        </div>
+        <div class="menu-body">
+          <div class="menu-top"><h3>Água Mineral</h3><span class="menu-price">R$ 4,00</span></div>
+          <p>Com ou sem gás. Sempre gelada, pra equilibrar o bem-bom do lanche.</p>
+          <button class="btn-order" data-item="Água Mineral" data-price="R$ 4,00"><i class="fa-brands fa-whatsapp"></i> Pedir</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALERIA ===== -->
+<section class="section section-orange" id="galeria">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Um pouco do nosso trabalho</span>
+      <h2>Fotos que <em>dão fome</em></h2>
+      <p>Veja como saem os nossos lanches — porque aqui a foto nunca mente.</p>
+    </div>
+    <div class="gallery">
+      <figure class="gallery-item gallery-tall">
+        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?q=80&w=800&auto=format&fit=crop" alt="Lanche artesanal" loading="lazy">
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=800&auto=format&fit=crop" alt="Hambúrguer" loading="lazy">
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?q=80&w=800&auto=format&fit=crop" alt="Lanche com batata" loading="lazy">
+      </figure>
+      <figure class="gallery-item gallery-tall">
+        <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?q=80&w=800&auto=format&fit=crop" alt="Lanche na chapa" loading="lazy">
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?q=80&w=800&auto=format&fit=crop" alt="Milkshake" loading="lazy">
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="Lanche barbecue" loading="lazy">
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=800&auto=format&fit=crop" alt="X-Tudo" loading="lazy">
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1610395219229-89ed2f3c1fbf?q=80&w=800&auto=format&fit=crop" alt="Batata frita" loading="lazy">
+      </figure>
+      <figure class="gallery-item gallery-tall">
+        <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=800&auto=format&fit=crop" alt="Lanche duplo" loading="lazy">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOCALIZAÇÃO E HORÁRIOS ===== -->
+<section class="section" id="localizacao">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Nos encontre</span>
+      <h2>Localização &amp; Horários</h2>
+    </div>
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+        <h3>Onde estamos</h3>
+        <p>Av. das Árvores, 1234 — Centro<br>São Paulo / SP<br>CEP 01234-567</p>
+        <a href="https://www.google.com/maps" target="_blank" rel="noopener" class="btn btn-primary btn-sm"><i class="fa-solid fa-map-location-dot"></i> Abrir no mapa</a>
+      </div>
+      <div class="info-card">
+        <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+        <h3>Horário de funcionamento</h3>
+        <ul class="hours-list">
+          <li><span>Segunda a Sexta</span><strong>11h às 23h</strong></li>
+          <li><span>Sábado</span><strong>11h às 23h30</strong></li>
+          <li><span>Domingo</span><strong>17h às 23h</strong></li>
+          <li><span>Feriados</span><strong>Consulte no WhatsApp</strong></li>
+        </ul>
+        <span class="open-now" id="openNow"><i class="fa-solid fa-circle"></i> Verificando horário...</span>
+      </div>
+      <div class="info-card">
+        <div class="info-icon"><i class="fa-solid fa-route"></i></div>
+        <h3>Como chegar</h3>
+        <p>Fácil de chegar! Estamos a 2 quarteirões da estação de metrô Centro, com estacionamento próprio e coberto para clientes.</p>
+        <div class="transport"><i class="fa-solid fa-bus"></i><i class="fa-solid fa-car"></i><i class="fa-solid fa-bicycle"></i><i class="fa-solid fa-person-walking"></i></div>
+      </div>
+    </div>
+    <div class="map-wrap">
+      <iframe
+        title="Mapa da Chapa Quente Burgers"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-46.6333%2C-23.5505%2C-46.6253%2C-23.5445&layer=mapnik&marker=-23.5475%2C-46.6293"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section section-black" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Dúvidas frequentes</span>
+      <h2>Perguntas Frequentes</h2>
+      <p>Não achou sua resposta? Chama a gente no WhatsApp, é rapidinho!</p>
+    </div>
+    <div class="faq">
+      <div class="faq-item">
+        <button class="faq-question"><span>Qual é o prazo de entrega?</span><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-answer"><p>Nosso prazo médio de entrega é de 30 a 45 minutos, dependendo da sua região. Para pedidos acima de R$ 40, a entrega é grátis em até 3km de distância.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>Quais são as formas de pagamento?</span><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-answer"><p>Aceitamos dinheiro, Pix, cartões de débito e crédito (todas as bandeiras) e vale-refeição (VR, Sodexo e Alelo). No delivery, pagamento preferencial via Pix ou cartão na entrega.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>Vocês entregam em quais regiões?</span><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-answer"><p>Entregamos em toda a região central e bairros vizinhos. Para saber se a entrega chega até você, é só mandar seu endereço no WhatsApp que confirmamos na hora.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>Vocês têm opções vegetarianas ou veganas?</span><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-answer"><p>Temos! O X-Veg é feito com hambúrguer de grão-de-bico e todos os vegetais do nosso lanche. Também conseguimos adaptar outros lanches retirando bacon, ovo e carne, se preferir.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>É possível fazer um lanche sem algum ingrediente?</span><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-answer"><p>Sim! Você pode personalizar seu lanche do seu jeito. É só avisar na hora do pedido e montamos tudo sem problema. Exemplos: sem cebola, sem tomate, sem bacon...</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>Fazem pedidos para festas e eventos?</span><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-answer"><p>Fazemos sim! Atendemos aniversários, eventos corporativos e festas com montagem de lanche na hora ou combos por pessoa. Fale com a gente pelo WhatsApp e monte sua festa.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>Vocês têm mesa disponível ou é só delivery?</span><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-answer"><p>Temos os dois! Nossa loja conta com mesas internas e também retirada no balcão. O lanche é sempre montado na hora, seja pra viagem ou pra comer na loja.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>Qual é o valor mínimo para pedido?</span><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-answer"><p>O pedido mínimo para delivery é de R$ 20,00. Abaixo disso, é só retirar na loja — a gente adora receber visita!</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTATO / REDES ===== -->
+<section class="section contact-section" id="contato">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Fale com a gente</span>
+      <h2>Faça seu pedido agora</h2>
+      <p>WhatsApp, ligação ou redes sociais. Estamos sempre por aqui pra te atender.</p>
+    </div>
+    <div class="contact-grid">
+      <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="contact-card whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <h3>WhatsApp</h3>
+        <p>(11) 99999-9999</p>
+        <span class="contact-note">Atendimento rápido 11h às 23h</span>
+      </a>
+      <a href="tel:+551133334444" class="contact-card phone">
+        <i class="fa-solid fa-phone"></i>
+        <h3>Telefone</h3>
+        <p>(11) 3333-4444</p>
+        <span class="contact-note">Para reservas e retirada</span>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener" class="contact-card instagram">
+        <i class="fa-brands fa-instagram"></i>
+        <h3>Instagram</h3>
+        <p>@chapaquente</p>
+        <span class="contact-note">Promoções e bastidores</span>
+      </a>
+      <a href="https://www.facebook.com" target="_blank" rel="noopener" class="contact-card facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+        <h3>Facebook</h3>
+        <p>/chapaquente</p>
+        <span class="contact-note">Novidades e eventos</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="#inicio" class="logo footer-logo">
+          <span class="logo-icon"><i class="fa-solid fa-burger"></i></span>
+          Chapa<span>Quente</span>
+        </a>
+        <p>Desde 2014 fazendo o X-Tudo mais querido da cidade. Feito na chapa, com carinho e muito queijo.</p>
+        <div class="social">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Cardápio</h4>
+        <ul>
+          <li><a href="#lanches">Lanches</a></li>
+          <li><a href="#bebidas">Bebidas</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/5511999999999" target="_blank" rel="noopener">(11) 99999-9999</a></li>
+          <li><a href="tel:+551133334444">(11) 3333-4444</a></li>
+          <li><a href="mailto:contato@chapaquente.com.br">contato@chapaquente.com.br</a></li>
+          <li><a href="#localizacao">Av. das Árvores, 1234</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Horário</h4>
+        <ul>
+          <li>Seg a Sex: 11h às 23h</li>
+          <li>Sábado: 11h às 23h30</li>
+          <li>Domingo: 17h às 23h</li>
+        </ul>
+        <a href="#contato" class="btn btn-primary btn-sm"><i class="fa-brands fa-whatsapp"></i> Fazer pedido</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Chapa Quente Burgers. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="whatsapp-float" title="Fale com a gente">
+  <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
